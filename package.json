@@ -6,8 +6,7 @@
     "license": "MIT",
     "main": "index.js",
     "scripts": {
-        "start": "node ./index.js",
-        "watch": "nodemon ./index.js",
+        "start": "nodemon ./index.js",
         "lint": "eslint .",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -17,6 +16,7 @@
     },
     "dependencies": {
         "botbuilder": "~4.5.1",
+        "deepai": "^1.0.15",
         "dotenv": "^7.0.0",
         "restify": "~8.3.3"
     },
