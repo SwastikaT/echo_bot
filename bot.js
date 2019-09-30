@@ -10,7 +10,7 @@ class EchoBot extends ActivityHandler {
         super();
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
         this.onMessage(async (context, next) => {
-            await context.sendActivity(async (context)=>{
+            await context.sendActivity(context=>{
     var resp = await deepai.callStandardApi("sentiment-analysis", {
             text: this.context.activity.text
     });
