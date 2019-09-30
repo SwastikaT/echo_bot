@@ -9,12 +9,13 @@ class EchoBot extends ActivityHandler {
     constructor() {
         super();
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
+        result = async ( text ) =>{
+
+            let resp = await deepai.callStandardApi("sentiment-analysis", {
+            text: this.text,
+    });}
         this.onMessage(async (context, next) => {
-            await context.sendActivity(context=>{
-    var resp = await deepai.callStandardApi("sentiment-analysis", {
-            text: this.context.activity.text
-    });
-});
+            await context.sendActivity( this.result(context.activity.text));
 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
