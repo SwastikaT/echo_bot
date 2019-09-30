@@ -3,7 +3,7 @@
 
 const { ActivityHandler } = require('botbuilder');
 const deepai = require('deepai');
-deepai.setApiKey('quickstart-QUdJIGlzIGNvbWluZy4uLi4K');
+deepai.setApiKey('ca1d267e-e2e7-46ac-a69b-56b5c327fc91');
 
 class EchoBot extends ActivityHandler {
     constructor() {
